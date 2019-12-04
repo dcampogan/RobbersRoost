@@ -1,0 +1,19 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.carousel-item {
+  height: 100vh
+}
+
+/*
+.navbar {
+  background-color: transparent !important;
+}
+*/
+
+#rowaddpadding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: orange;
+}
