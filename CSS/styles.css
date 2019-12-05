@@ -1,19 +1,47 @@
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 
 }
 
 .carousel-item {
   height: 100vh
 }
 
-/*
-.navbar {
-  background-color: transparent !important;
+.carousel-indicators li {
+  border-radius: 14px;
+  width: 14px;
+  height: 14px;
+  background-color: #a1a1a1;
 }
-*/
 
-#rowaddpadding {
+#addpadding {
   padding-top: 100px;
   padding-bottom: 100px;
-  background: orange;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.social-icons {
+  text-align: center;
+  }  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:70px;
+  height:70px;
+
 }
