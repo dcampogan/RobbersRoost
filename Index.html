@@ -8,7 +8,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="CSS/styles.css">
@@ -16,34 +16,55 @@
   <title>Robbers Roost Outfitters</title>
 </head>
 
+<!--
+<div class="container-fluid" id="home">
+  <div class="landing-text">
+    <h1>Where the pavement ends...</h1>
+    <h2>is where your adventure begins.</h2>
+    <a href="#" class="btn btn-default btn-lg">book now</a>
+  </div>
+</div>
+//-->
+
+
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar  navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#"><img src="img/logo_sm.png" height="75" alt="Robber's Roost Outfitters"></a>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">ROBBER'S ROOST OUTFITTERS</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active pr-3">
+          <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="trips.html">Trips</a>
+        <li class="nav-item pr-3">
+          <a class="nav-link" href="trips.html">TRIPS</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="courses.html">Courses</a>
+        <li class="nav-item pr-3">
+          <a class="nav-link" href="courses.html">COURSES</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="aboutus.html">About Us</a>
+        <li class="nav-item pr-3">
+          <a class="nav-link" href="aboutus.html">ABOUT US</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <!-- carousel -->
+  <header class="deadhorse">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="text-uppercase">where the pavement ends...</h1>
+        <h2>your adventure begins.</h2>
+        <a href="#" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!--
   <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
     <ol class="carousel-indicators">
       <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -51,7 +72,7 @@
       <li data-target="#carouselIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active" style="background-image: url(img/changeItUp1.jpg);">
+      <div class="carousel-item active" style="background-image: url(img/background.jpg)">
         <div class="carousel-caption">
           <p>Where the pavement ends...</p>
           <h1 class="d-none d-sm-block">And your adventure begins!</h1>
@@ -81,27 +102,20 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <!-- end carousel -->
+  //-->
 
   <!-- what we do info -->
-  <div class="container-fluid">
-    <div class="row" id="addpadding">
-      <div class="col">
-        <h1 class="text-center">What we do</h1>
-        <p class="text-center ml-3 mr-3">With the picturesque hub Kanab, UT as base of operations, Dreamland Safari
-          Tours offers unique outdoor adventure tours in Southern Utah and Northern Arizona with plenty of photography
-          stops and short hikes mixed in. From the well known sights to those “secret” places only the locals know
-          about, our travel photography tours in Utah and Arizona highlight the best of this wild, vivid landscape. Our
-          forays into the backroads of Southern Utah and Northern Arizona are designed for everyday people. Our
-          seasoned, naturalist tour guides are simply the best in the business. Loaded heavy duty 4×4 Suburbans carry up
-          to 8 passengers in air conditioned comfort. Whether you are interested in touring for 3 hours or a week,
-          backyard or backcountry, we have you covered. Let us do all the work… After all, it’s YOUR vacation!
+  <div class="container-fluid whatwedo">
+    <div class="row addpadding">
+      <div class="col text-center">
+        <h1>What we do</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio magni atque eligendi, libero laborum expedita officiis perferendis deleniti temporibus reiciendis laboriosam velit doloremque cumque quibusdam tempora explicabo. Perferendis vero distinctio corporis porro et sint, quaerat accusamus beatae libero. Molestiae cupiditate quia quo fugit odio dignissimos, aspernatur quaerat! Alias, non!
         </p>
       </div>
     </div>
   </div>
 
-  <div class="container" id="addpadding">
+  <div class="container addpadding">
     <div class="row row-content align-items-center">
       <div class="col-sm-2 text-center text-sm-right">
         <a href="trips.html"><img src="img/users.png" width="75" height="75" alt="placeholder1" class="pb-3"></a>
@@ -176,106 +190,132 @@
   </div>
 
   <!-- Our Most Popular Trips-->
-  <div class="container-fluid" id="addpadding">
+  <div class="container-fluid addpadding populartrips">
     <div class="row row-content justify-content-center">
       <div class="col-lg-3">
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 pb-3">
         <h2>Our Most Popular Trips</h2>
       </div>
     </div>
-    <div class="row row-content justify-content-center pb-3">
-      <div class="col-lg-3 my-auto">
-        <img src="https://via.placeholder.com/300x540.png" alt="">
+
+    <div class="row row-content justify-content-center">
+      <div class="col-lg-3 pb-3 text-center text-md-left">
+        <img id="shadow" src="img/Robbers1.jpg" alt="">
       </div>
-      <div class="col-lg-6 my-auto">
-        <h3>Canyoneering the North Fork of Blue John Canyon</h3>
+      <div class="col-lg-6 my-auto py-3">
+        <h3 class="text-center text-md-left">Canyoneering the North Fork of Blue John Canyon</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ex praesentium blanditiis perferendis sint
           beatae, consectetur alias sed placeat adipisci laborum tenetur quidem quasi neque fuga fugit quae rem! Nisi
           magni, id est facilis tempore numquam quos quas nulla harum iure ad, accusamus facere cum excepturi fugiat.
           Aspernatur, fuga eos tempora velit omnis id amet veniam ut mollitia beatae asperiores voluptatum fugit dolore
           magnam at sit debitis. Aperiam architecto amet quos consequuntur voluptatum illum esse, aliquid doloribus est.
           Reprehenderit, molestias?</p>
-          <div class="col-md-4 col-xl-2 mt-4">
-            <!-- modal trigger -->
-            <a role="button" class="btn btn-lg btn-outline-dark" data-toggle="modal" data-target="#bookNowModal">Book
-              Now</a>
-          </div>
+        <div class="col text-center text-md-left">
+          <!-- modal trigger -->
+          <a role="button" class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#bookNowModal">Book
+            Now</a>
+        </div>
       </div>
-
     </div>
-    <div class="row row-content justify-content-center">
-      <div class="col-lg-3 my-auto">
-        <img src="https://via.placeholder.com/300x540.png" alt="">
+
+    <div class="row row-content justify-content-center py-3">
+      <div class="col-lg-3 pb-3 text-center text-md-left">
+        <img id="shadow" src="img/Robbers2.jpg" alt="">
       </div>
       <div class="col-lg-6 my-auto">
-        <h3>Canyoneering the Left Fork of Leprechaun Canyon</h3>
+        <h3 class="text-center text-md-left">Canyoneering High Spur Canyon</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ex praesentium blanditiis perferendis sint
+          beatae, consectetur alias sed placeat adipisci laborum tenetur quidem quasi neque fuga fugit quae rem! Nisi
+          magni, id est facilis tempore numquam quos quas nulla harum iure ad, accusamus facere cum excepturi fugiat.
+          Aspernatur, fuga eos tempora velit omnis id amet veniam ut mollitia beatae asperiores voluptatum fugit dolore
+          magnam at sit debitis. Aperiam architecto amet quos consequuntur voluptatum illum esse, aliquid doloribus est.
+          Reprehenderit, molestias?</p>
+        <div class="col text-center text-md-left">
+          <!-- modal trigger -->
+          <a role="button" class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#bookNowModal">Book
+            Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-content justify-content-center py-3">
+      <div class="col-lg-3 text-center text-md-left">
+        <img id="shadow" src="img/Robbers3.jpg" alt="">
+      </div>
+      <div class="col-lg-6 my-auto">
+        <h3 class="text-center text-md-left">Canyoneering the Left Fork of Leprechaun Canyon</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora exercitationem error cumque! Cum,
           accusantium omnis. Accusantium ex recusandae, doloribus vero itaque repellat necessitatibus assumenda,
           quisquam dignissimos autem, rerum perferendis eum exercitationem atque? Perspiciatis, nulla unde dolor tenetur
           eum quibusdam neque officia sequi officiis nesciunt ut, perferendis, cupiditate aliquam placeat inventore
           doloribus harum ad provident beatae. Vitae velit neque iusto accusantium quod. Illum eaque fuga numquam nam
           rerum at delectus vel ea iure laudantium? Expedita fugiat atque, aperiam accusamus qui exercitationem.<p>
-          <div class="col-md-4 col-xl-2 mt-4">
-            <!-- modal trigger -->
-            <a role="button" class="btn btn-lg btn-outline-dark" data-toggle="modal" data-target="#bookNowModal">Book
-              Now</a>
-          </div>
+            <div class="col text-center text-md-left">
+              <!-- modal trigger -->
+              <a role="button" class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#bookNowModal">Book
+                Now</a>
+            </div>
       </div>
-
     </div>
   </div>
 
   <!-- BOOK NOW modal-->
-  <div class="modal fade" id="bookNowModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Sign Up Below</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <form>
-                  <div class="form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlSelect2">Example multiple select</label>
-                    <select multiple class="form-control" id="exampleFormControlSelect2">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-outline-dark">Save changes</button>
-          </div>
+  <div class="modal fade" id="bookNowModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign Up Below</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1"><i class="far fa-user"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Example select</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">Example multiple select</label>
+              <select multiple class="form-control" id="exampleFormControlSelect2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-dark">Save changes</button>
         </div>
       </div>
     </div>
-    
+  </div>
+
   <!-- accordian 
   <div class="container" id="addpadding">
   <h3>Our Most Popular Tours</h3>
@@ -327,9 +367,9 @@
 </div>
 //-->
 
-  <footer class="site-footer">
+  <footer>
     <div class="container">
-      <div class="row">
+      <div class="row addpadding">
         <div class="col-4 col-sm-2 offset-1">
           <h3>Links</h3>
           <ul class="list-unstyled">
@@ -341,28 +381,26 @@
         </div>
         <div class="col-6 col-sm-5 text-center">
           <h3>Social</h3>
-          <ul class="social-icons">
-            <li><a href="http://www.facebook.com"><img src="img/socialblack/facebook.png" /></a></li>
-            <li><a href="http://www.twitter.com"><img src="img/socialblack/instagram.png" /></a></li>
-            <li><a href="http://www.pinterest.com"><img src="img/socialblack/pinterest.png" /></a></li>
-            <li><a href="http://www.linkedin.com"><img src="img/socialblack/Linkedin.png" /></a></li>
+          <ul class="social-icons pl-0">
+            <li><a href="http://www.facebook.com"><img src="img/socialblack/facebook.png"
+                  style="width:40px;height:40px" /></a></li>
+            <li><a href="http://www.twitter.com"><img src="img/socialblack/instagram.png"
+                  style="width:40px;height:40px" /></a></li>
+            <li><a href="http://www.pinterest.com"><img src="img/socialblack/pinterest.png"
+                  style="width:40px;height:40px" /></a></li>
+            <li><a href="http://www.linkedin.com"><img src="img/socialblack/Linkedin.png"
+                  style="width:40px;height:40px" /></a></li>
           </ul>
         </div>
         <div class="col-sm-4 text-center">
           <h3> Contact Us</h3>
-          <ul class="social-icons">
-            <li><a href="mailto:robbersroost@roost.com"><img data-toggle="tooltip" data-placement="left"
-                  title="e-mail us at robbersroost@roost.com" src="img/e-mail.jpg" /></a></li>
-            <li><a href="tel:+12065551234"><img data-toggle="tooltip" data-placement="right"
-                  title="Call us at 1-206-555-1234" src="img/phone.png" /></a></li>
+          <ul class="social-icons pl-0">
+            <li><a href="mailto:robbersroost@roost.com"><img data-toggle="tooltip" data-placement="bottom"
+                  title="e-mail us at robbersroost@roost.com" src="img/e-mail.jpg" style="width:40px;height:40px" /></a>
+            </li>
+            <li><a href="tel:+12065551234"><img data-toggle="tooltip" data-placement="bottom"
+                  title="Call us at 1-206-555-1234" src="img/phone.png" style="width:40px;height:40px" /></a></li>
           </ul>
-          <!--
-              <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
-                  1-206-555-1234</a><br />
-              <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i
-                      class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
-          </div>
-          //-->
         </div>
       </div>
   </footer>

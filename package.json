@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "lite-server": "^2.3.0"
   },
   "dependencies": {
