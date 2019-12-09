@@ -17,39 +17,80 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar  navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#">Robbers Roost Outfitters</a>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand pl-3" href="#">ROBBER'S ROOST OUTFITTERS</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active pr-3">
+          <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="trips.html">Trips</a>
+        <li class="nav-item pr-3">
+          <a class="nav-link" href="trips.html">TRIPS</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="courses.html">Courses</a>
+        <li class="nav-item pr-3">
+          <a class="nav-link" href="courses.html">COURSES</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">About Us</a>
+        <li class="nav-item pr-3">
+          <a class="nav-link active" href="about.html">ABOUT US</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class="container text-center">
-    <h1>Welcome to Robbers Roost Outfitters</h1>
-    <p>Your Desert Adventure Begins Here</p>
-  </div>
+  <footer>
+    <div class="container">
+      <div class="row addpadding">
+        <div class="col-4 col-sm-2 offset-1">
+          <h3>Links</h3>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sites</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-5 text-center">
+          <h3>Social</h3>
+          <ul class="social-icons pl-0">
+            <li><a href="http://www.facebook.com"><img src="img/socialblack/facebook.png"
+                  style="width:40px;height:40px" /></a></li>
+            <li><a href="http://www.twitter.com"><img src="img/socialblack/instagram.png"
+                  style="width:40px;height:40px" /></a></li>
+            <li><a href="http://www.pinterest.com"><img src="img/socialblack/pinterest.png"
+                  style="width:40px;height:40px" /></a></li>
+            <li><a href="http://www.linkedin.com"><img src="img/socialblack/Linkedin.png"
+                  style="width:40px;height:40px" /></a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4 text-center">
+          <h3> Contact Us</h3>
+          <ul class="social-icons pl-0">
+            <li><a href="mailto:robbersroost@roost.com"><img data-toggle="tooltip" data-placement="bottom"
+                  title="e-mail us at robbersroost@roost.com" src="img/e-mail.jpg" style="width:40px;height:40px" /></a>
+            </li>
+            <li><a href="tel:+12065551234"><img data-toggle="tooltip" data-placement="bottom"
+                  title="Call us at 1-206-555-1234" src="img/phone.png" style="width:40px;height:40px" /></a></li>
+          </ul>
+        </div>
+      </div>
+  </footer>
 
   <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- enable tooltips -->
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
 </body>
 
 </html>
