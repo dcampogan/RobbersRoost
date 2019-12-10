@@ -8,6 +8,8 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="CSS/styles.css">
 
@@ -17,39 +19,195 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar  navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#">Robbers Roost Outfitters</a>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand pl-3" href="#">ROBBER'S ROOST OUTFITTERS</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active pr-3">
+          <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Trips</a>
+        <li class="nav-item pr-3">
+          <a class="nav-link active" href="#">TRIPS</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="courses.html">Courses</a>
+        <li class="nav-item pr-3">
+          <a class="nav-link" href="courses.html">COURSES</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="aboutus.html">About Us</a>
+        <li class="nav-item pr-3">
+          <a class="nav-link" href="about.html">ABOUT US</a>
+        </li>
+        <li class="nav-item pr-3">
+          <a class="nav-link" href="contact.html">CONTACT</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class="container text-center">
-    <h1>Welcome to Robbers Roost Outfitters</h1>
-    <p>Your Desert Adventure Begins Here</p>
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center">
+    <h1>We'd Love To Hear From You!<h1>
+        <p class="lead">Whether you have a question about a trip, course or anything else, our team is ready to answer
+          all your questions</p>
   </div>
+
+  <!-- trips section -->
+  <div class="container">
+    <div class="row">
+      <div class="card-deck">
+        <div class="card">
+          <a data-toggle="collapse" data-target="#toggle1"><img src="https://via.placeholder.com/540x300"
+              class="card-img-top" alt="..."></a>
+          <div class="card-body collapse" id="toggle1">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <a data-toggle="collapse" data-target="#toggle2"><img src="https://via.placeholder.com/540x300"
+              class="card-img-top" alt="..."></a>
+          <div class="card-body collapse" id="toggle2">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <a data-toggle="collapse" data-target="#toggle3"><img src="https://via.placeholder.com/540x300"
+              class="card-img-top" alt="..."></a>
+          <div class="card-body collapse" id="toggle3">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="https://via.placeholder.com/270x150" />
+          <div class="card-block">
+            <h4 class="card-title">Brownie Delight</h4>
+
+            <p class="card-text">Our customer favorite chocolate ice cream jam packed with pieces of brownies and fudge
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="https://via.placeholder.com/270x150" />
+          <div class="card-block">
+            <h4 class="card-title">Butter Pecan</h4>
+
+            <p class="card-text">Roasted pecans, butter and vanilla come together to make this wonderful ice cream</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="https://via.placeholder.com/270x150" />
+          <div class="card-block">
+            <h4 class="card-title">Black Cherry</h4>
+
+            <p class="card-text">Our classic vanilla loaded with plump black cherries to give flavor and color</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="https://via.placeholder.com/270x150" />
+          <div class="card-block">
+            <h4 class="card-title">Mint Chip</h4>
+
+            <p class="card-text">Our signiture mint ice cream jam packed with mint chocolate chips</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="https://via.placeholder.com/270x150" />
+          <div class="card-block">
+            <h4 class="card-title">Pistachio</h4>
+
+            <p class="card-text">Our classic pistachio is loaded with nuts to give it that great flavor, and of course
+              comes in your favorite color</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="https://via.placeholder.com/270x150" />
+          <div class="card-block">
+            <h4 class="card-title">More Flavors</h4>
+
+            <p class="card-text">We couldn not fit all of our wonderful flavors on one page, click here to see more!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+//-->
+
+  <footer>
+    <div class="container">
+      <div class="row row-spacing">
+        <div class="col-4 col-sm-2 offset-1">
+          <h3>Links</h3>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sites</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-5 text-center">
+          <h3>Social</h3>
+          <ul class="social-icons pl-0">
+            <li><a href="http://www.facebook.com"><img src="img/socialblack/facebook.png"
+                  style="width:40px;height:40px" /></a></li>
+            <li><a href="http://www.twitter.com"><img src="img/socialblack/instagram.png"
+                  style="width:40px;height:40px" /></a></li>
+            <li><a href="http://www.pinterest.com"><img src="img/socialblack/pinterest.png"
+                  style="width:40px;height:40px" /></a></li>
+            <li><a href="http://www.linkedin.com"><img src="img/socialblack/Linkedin.png"
+                  style="width:40px;height:40px" /></a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4 text-center">
+          <h3> Contact Us</h3>
+          <ul class="social-icons pl-0">
+            <li><a href="mailto:robbersroost@roost.com"><img data-toggle="tooltip" data-placement="bottom"
+                  title="e-mail us at robbersroost@roost.com" src="img/e-mail.jpg" style="width:40px;height:40px" /></a>
+            </li>
+            <li><a href="tel:+12065551234"><img data-toggle="tooltip" data-placement="bottom"
+                  title="Call us at 1-206-555-1234" src="img/phone.png" style="width:40px;height:40px" /></a></li>
+          </ul>
+        </div>
+      </div>
+  </footer>
+
 
   <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- enable tooltips -->
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
 </body>
 
 </html>

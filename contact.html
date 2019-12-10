@@ -8,11 +8,14 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="CSS/styles.css">
 
   <title>Robbers Roost Outfitters</title>
 </head>
+
 
 <body>
 
@@ -38,11 +41,55 @@
           <a class="nav-link active" href="about.html">ABOUT US</a>
         </li>
         <li class="nav-item pr-3">
-          <a class="nav-link" href="contact.html">CONTACT</a>
+          <a class="nav-link active" href="contact.html">CONTACT</a>
         </li>
       </ul>
     </div>
   </nav>
+
+  <div class="jumbotron text-center">
+    <h1>We'd Love To Hear From You!<h1>
+        <p class="lead">Whether you have a question about a trip, course or anything else, our team is ready to answer
+          all your questions</p>
+  </div>
+
+  <div class="container contactcontainer">
+    <form>
+      <div class="form-row justify-content-center">
+        <div class="form-group col-md-4">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="Jane">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Doe">
+        </div>
+      </div>
+      <div class="form-row justify-content-center">
+        <div class="form-group col-md-8">
+          <label for="email">
+            E-mail
+          </label>
+          <input type="text" class="form-control" id="email" placeholder="janedoe@gmail.com" />
+        </div>
+      </div>
+      <div class="form-row justify-content-center">
+        <div class="form-group col-md-8">
+          <label for="feedback">What Did You Have On Your Mind
+          </label>
+          <div>
+            <textarea class="form-control" id="feedback" name="feedback" rows="5"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row justify-content-center">
+        <div class="offset-md-2 col-md-10">
+          <button type="submit" class="btn btn-outline-dark">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
 
   <footer>
     <div class="container">
