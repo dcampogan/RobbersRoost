@@ -16,6 +16,30 @@
   <title>Robbers Roost Outfitters</title>
 </head>
 
+<!-- Snow Canyon background -->
+<header class="snowcanyon">
+  <div class="container d-flex h-100 align-items-center text-center">
+    <div class="row mx-auto">
+      <div class="col">
+        <img src="img/canyoning.png" width="100" height="100" alt="">
+        <h3 class="p-3">Canyoneering</h3>
+      </div>
+      <div class="col">
+        <img src="img/climbing.png" width="100" height="100" alt="">
+        <h3 class="p-3">Climbing</h3>
+      </div>
+      <div class="col">
+        <img src="img/hiking.png" width="100" height="100" alt="">
+        <h3 class="p-3">Hiking</h3>
+      </div>
+      <div class="col">
+        <img src="img/backpacking.png" width="100" height="100" alt="">
+        <h3 class="p-3">Backpacking</h3>
+      </div>
+    </div>
+  </div>
+</header>
+
 <body>
 
   <!-- Navbar -->
@@ -27,7 +51,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active pr-3">
+        <li class="nav-item pr-3">
           <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item pr-3">
@@ -46,19 +70,28 @@
     </div>
   </nav>
 
-  <!-- Jumbotron -->
-  <div class="jumbotron text-center">
-    <h1>We'd Love To Hear From You!<h1>
-        <p class="lead">Whether you have a question about a trip, course or anything else, our team is ready to answer
-          all your questions</p>
+  <!-- available trips -->
+  <div class="container-fluid whatwedo">
+    <div class="row addpadding">
+      <div class="col text-center">
+        <h1>Available Trips</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio magni atque eligendi, libero laborum
+          expedita officiis perferendis deleniti temporibus reiciendis laboriosam velit doloremque cumque quibusdam
+          tempora explicabo. Perferendis vero distinctio corporis porro et sint, quaerat accusamus beatae libero.
+          Molestiae cupiditate quia quo fugit odio dignissimos, aspernatur quaerat! Alias, non!
+        </p>
+      </div>
+    </div>
   </div>
 
   <!-- trips section -->
-  <div class="container">
+
+  <!--
+  <div class="container-fluid addpadding tripssection">
     <div class="row">
       <div class="card-deck">
         <div class="card">
-          <a data-toggle="collapse" data-target="#toggle1"><img src="https://via.placeholder.com/540x300"
+          <a data-toggle="collapse" data-target="#toggle1"><img src="img/goblin.jpg" width="540" height="300"
               class="card-img-top" alt="..."></a>
           <div class="card-body collapse" id="toggle1">
             <h5 class="card-title">Card title</h5>
@@ -68,7 +101,7 @@
           </div>
         </div>
         <div class="card">
-          <a data-toggle="collapse" data-target="#toggle2"><img src="https://via.placeholder.com/540x300"
+          <a data-toggle="collapse" data-target="#toggle2"><img src="img/goblin.jpg" width="540" height="300"
               class="card-img-top" alt="..."></a>
           <div class="card-body collapse" id="toggle2">
             <h5 class="card-title">Card title</h5>
@@ -76,7 +109,7 @@
           </div>
         </div>
         <div class="card">
-          <a data-toggle="collapse" data-target="#toggle3"><img src="https://via.placeholder.com/540x300"
+          <a data-toggle="collapse" data-target="#toggle3"><img src="img/goblin.jpg" width="540" height="300"
               class="card-img-top" alt="..."></a>
           <div class="card-body collapse" id="toggle3">
             <h5 class="card-title">Card title</h5>
@@ -88,80 +121,198 @@
       </div>
     </div>
   </div>
+-->
 
-  <!--
-  <div class="container-fluid">
+
+  <div class="container-fluid tripsbkg">
     <div class="row">
-      <div class="col-md-6 col-lg-4">
-        <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="https://via.placeholder.com/270x150" />
-          <div class="card-block">
-            <h4 class="card-title">Brownie Delight</h4>
-
-            <p class="card-text">Our customer favorite chocolate ice cream jam packed with pieces of brownies and fudge
+      <div class="col-md-4 col-lg-4 p-3">
+        <div class="card border-0 p-3"><img alt="Card image cap"  id="shadow" class="card-img-top img-fluid mx-auto"
+            src="img/trips/bluejohn.png" style="width:267px;height:400px;" />
+          <div class="card-block p-3">
+            <h4 class="card-title text-center">Brownie Delight</h4>
+            <p class="card-text text-center">Our customer favorite chocolate ice cream jam packed with pieces of
+              brownies and fudge
             </p>
+            <!-- modal trigger -->
+            <div class="text-center">
+              <a role="button" class="btn btn- mybtn-white text-center" data-toggle="modal"
+                data-target="#bookNowModal">Book
+                Now</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="https://via.placeholder.com/270x150" />
-          <div class="card-block">
-            <h4 class="card-title">Butter Pecan</h4>
-
-            <p class="card-text">Roasted pecans, butter and vanilla come together to make this wonderful ice cream</p>
+      <div class="col-md-4 col-lg-4 p-3">
+        <div class="card border-0 p-3"><img alt="Card image cap"  id="shadow" class="card-img-top img-fluid mx-auto"
+            src="img/trips/leprechaun.png" style="width:267px;height:400px;" />
+          <div class="card-block p-3">
+            <h4 class="card-title text-center">Butter Pecan</h4>
+            <p class="card-text text-center">Roasted pecans, butter and vanilla come together to make this wonderful ice
+              cream</p>
+            <!-- modal trigger -->
+            <div class="text-center">
+              <a role="button" class="btn btn- mybtn-white text-center" data-toggle="modal"
+                data-target="#bookNowModal">Book
+                Now</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="https://via.placeholder.com/270x150" />
-          <div class="card-block">
-            <h4 class="card-title">Black Cherry</h4>
-
-            <p class="card-text">Our classic vanilla loaded with plump black cherries to give flavor and color</p>
+      <div class="col-md-4 col-lg-4 p-3">
+        <div class="card border-0 p-3"><img alt="Card image cap"  id="shadow" class="card-img-top img-fluid mx-auto"
+            src="img/trips/dingdang.png" style="width:267px;height:400px;" />
+          <div class="card-block p-3">
+            <h4 class="card-title text-center">Black Cherry</h4>
+            <p class="card-text text-center">Our classic vanilla loaded with plump black cherries to give flavor and
+              color</p>
+            <!-- modal trigger -->
+            <div class="text-center">
+              <a role="button" class="btn btn- mybtn-white text-center" data-toggle="modal"
+                data-target="#bookNowModal">Book
+                Now</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="https://via.placeholder.com/270x150" />
-          <div class="card-block">
-            <h4 class="card-title">Mint Chip</h4>
-
-            <p class="card-text">Our signiture mint ice cream jam packed with mint chocolate chips</p>
+      <div class="col-md-4 col-lg-4 p-3">
+        <div class="card border-0 p-3"><img alt="Card image cap"  id="shadow" class="card-img-top img-fluid mx-auto"
+            src="img/trips/leprechaun2.jpg" style="width:400px;height:267px;" />
+          <div class="card-block p-3">
+            <h4 class="card-title text-center">Mint Chip</h4>
+            <p class="card-text text-center">Our signiture mint ice cream jam packed with mint chocolate chips</p>
+            <!-- modal trigger -->
+            <div class="text-center">
+              <a role="button" class="btn btn- mybtn-white text-center" data-toggle="modal"
+                data-target="#bookNowModal">Book
+                Now</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="https://via.placeholder.com/270x150" />
-          <div class="card-block">
-            <h4 class="card-title">Pistachio</h4>
-
-            <p class="card-text">Our classic pistachio is loaded with nuts to give it that great flavor, and of course
+      <div class="col-md-4 col-lg-4 p-3">
+        <div class="card border-0 p-3"><img alt="Card image cap"  id="shadow" class="card-img-top img-fluid mx-auto"
+            src="img/trips/goblin.jpg" style="width:400px;height:267x;" />
+          <div class="card-block p-3">
+            <h4 class="card-title text-center">Pistachio</h4>
+            <p class="card-text text-center">Our classic pistachio is loaded with nuts to give it that great flavor, and
+              of course
               comes in your favorite color</p>
+            <!-- modal trigger -->
+            <div class="text-center">
+              <a role="button" class="btn btn- mybtn-white text-center" data-toggle="modal"
+                data-target="#bookNowModal">Book
+                Now</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="https://via.placeholder.com/270x150" />
-          <div class="card-block">
-            <h4 class="card-title">More Flavors</h4>
-
-            <p class="card-text">We couldn not fit all of our wonderful flavors on one page, click here to see more!</p>
+      <div class="col-md-4 col-lg-4 p-3">
+        <div class="card border-0 p-3"><img alt="Card image cap"  id="shadow" class="card-img-top img-fluid mx-auto"
+            src="img/trips/peekaboo.png" style="width:400px;height:267px;" />
+          <div class="card-block p-3">
+            <h4 class="card-title text-center">More Flavors</h4>
+            <p class="card-text text-center">We couldn not fit all of our wonderful flavors on one page, click here to
+              see more!</p>
+            <!-- modal trigger -->
+            <div class="text-center">
+              <a role="button" class="btn btn- mybtn-white text-center" data-toggle="modal"
+                data-target="#bookNowModal">Book
+                Now</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-//-->
+
+  <!-- BOOK NOW modal-->
+  <div class="modal fade" id="bookNowModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign Up Below</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Jane">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Doe">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="email">
+                  E-mail Address
+                </label>
+                <input type="text" class="form-control" id="email" placeholder="janedoe@gmail.com" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="triplocation" class="col-form-label">Trip Location</label>
+                <div class="col">
+                  <select name="triplocation" id="triplocation" class="form-control">
+                    <option selected>Select...</option>
+                    <option value="1">North Fork Blue John Canyon</option>
+                    <option value="2">High Spur Canyon</option>
+                    <option value="3">Left Fork Leprechaun Canyon</option>
+                    <option value="4">South Fork Hogwarts Canyon</option>
+                    <option value="5">Constrychnine Canyon</option>
+                    <option value="6">Fat Man's Misery Canyon</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="groupsize" class="col-form-label">Group Size</label>
+                <div class="col">
+                  <select name="groupsize" id="groupsize" class="form-control">
+                    <option selected>Select...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-outline-dark">Book</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer>
-    <div class="container">
-      <div class="row row-spacing">
+    <div class="container ">
+      <div class="row row-spacing align-items-center">
         <div class="col-4 col-sm-2 offset-1">
-          <h3>Links</h3>
+          <h3>LINKS</h3>
           <ul class="list-unstyled">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
@@ -170,7 +321,7 @@
           </ul>
         </div>
         <div class="col-6 col-sm-5 text-center">
-          <h3>Social</h3>
+          <h3>SOCIAL</h3>
           <ul class="social-icons pl-0">
             <li><a href="http://www.facebook.com"><img src="img/socialblack/facebook.png"
                   style="width:40px;height:40px" /></a></li>
@@ -183,7 +334,7 @@
           </ul>
         </div>
         <div class="col-sm-4 text-center">
-          <h3> Contact Us</h3>
+          <h3>CONTACT US</h3>
           <ul class="social-icons pl-0">
             <li><a href="mailto:robbersroost@roost.com"><img data-toggle="tooltip" data-placement="bottom"
                   title="e-mail us at robbersroost@roost.com" src="img/e-mail.jpg" style="width:40px;height:40px" /></a>
