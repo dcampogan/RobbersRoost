@@ -3,23 +3,6 @@ body {
   font-size: 20px;
 }
 
-/*
-.carousel-item {
-  height: 100vh
-}
-*/
-
-/*
-#home {
-  background-image: url(../img/background.jpg);
-  height: 100vh;
-  width: 100;
-  background-size: cover;
-  background-position center center;
-  background-repeat: no-repeat;
-}
-*/
-
 a {
   color: inherit;
   text-decoration: none;
@@ -28,6 +11,11 @@ a {
 .addpadding {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+/* trips available */
+.card-block h4 {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .deadhorse {
@@ -79,7 +67,11 @@ letter-spacing: 0.3rem
 
 .populartrips {
   background-color: #343940;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.7);
+}
+
+.populartrips h2 {
+  color: rgba(255,255,255,1);
 }
 
 .row-spacing {
@@ -123,10 +115,6 @@ letter-spacing: 0.3rem
   padding-bottom: 3rem
 }
 
-.tripssection {
-  background-color: #343940;
-}
-
 /* footer */
 .social-icons {
   text-align: center;
@@ -148,12 +136,12 @@ letter-spacing: 0.3rem
 /* trips card formatting */
 .tripsbkg {
     background-color: #343940;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,1);
 }
 
 .card {
   background-color: #343940;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.6);
 }
 
 
@@ -183,7 +171,7 @@ footer li {
 }
 
 .whatwedo p {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.7);
   letter-spacing: 0.2rem;
   line-height: 2.5rem;
 }
